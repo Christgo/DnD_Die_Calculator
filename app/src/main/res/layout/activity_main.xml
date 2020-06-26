@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_dark"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1.5"> <!-- TODO Check to see if there's a better way to distribute weight/room/size -->
+            <TextView
+                android:id="@+id/sum"
+                android:textSize="100sp"
+                android:textColor="@android:color/holo_blue_bright"
+                android:text="@string/zero"
+                android:layout_marginTop="16dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/sumHistory"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_blue_bright"
+                android:layout_marginTop="16dp"
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/> <!-- tracks button history -->
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textSize="42sp"
+                android:text="@string/nine"
+                android:onClick="buttonClicked"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textSize="42sp"
+                android:text="@string/ten"
+                android:onClick="buttonClicked"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textSize="42sp"
+                android:text="@string/eleven"
+                android:onClick="buttonClicked"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textSize="42sp"
+                android:text="@string/twelve"
+                android:onClick="buttonClicked"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textSize="42sp"
+                android:text="@string/five"
+                android:onClick="buttonClicked"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textSize="42sp"
+                android:text="@string/six"
+                android:onClick="buttonClicked"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textSize="42sp"
+                android:text="@string/seven"
+                android:onClick="buttonClicked"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textSize="42sp"
+                android:text="@string/eight"
+                android:onClick="buttonClicked"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textSize="42sp"
+                android:text="@string/one"
+                android:onClick="buttonClicked"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textSize="42sp"
+                android:text="@string/two"
+                android:onClick="buttonClicked"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textSize="42sp"
+                android:text="@string/three"
+                android:onClick="buttonClicked"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textSize="42sp"
+                android:text="@string/four"
+                android:onClick="buttonClicked"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="0.5">
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@color/colorClearButton"
+                android:textSize="30sp"
+                android:text="@string/clear"
+                android:onClick="clearSum"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+            <!-- layout_width="0dp" no longer interferes with rest of column 1 -->
+            <!-- TODO Button that removes last entered number -->
+        </TableRow>
+        <!-- TODO Settings underneath here -->
+    </TableLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
